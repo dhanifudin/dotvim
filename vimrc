@@ -18,7 +18,7 @@ if !has('nvim')
 endif
 
 let plug_files = [
-  \ 'plug-enable/*.vim'
+  \ 'plug-enabled/*.vim'
   \ ]
 
 call plug#begin('~/.vim/plug')

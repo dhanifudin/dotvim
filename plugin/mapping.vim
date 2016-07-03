@@ -48,9 +48,6 @@ nnoremap Y y$
 nnoremap vv <c-v>
 nnoremap U <c-r>
 
-" Fast Suspend
-nnoremap <leader>z <c-z>
-
 " Execute Command
 nnoremap ! <esc>:!
 

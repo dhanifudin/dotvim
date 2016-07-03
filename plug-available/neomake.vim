@@ -1,4 +1,4 @@
-Plug 'benekastah/neomake'
+Plug 'neomake/neomake'
 
 let g:neomake_php_enabled_makers = ['php']
 

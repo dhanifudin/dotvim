@@ -5,7 +5,7 @@ Plug 'fisadev/vim-ctrlp-cmdpalette'
 " Configurations
 let g:ctrlp_map = '<space>f'
 let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_by_filename = 0
+let g:ctrlp_by_filename = 1
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_clear_cache_on_exit = 1
 let g:ctrlp_open_new_file = 'r'
