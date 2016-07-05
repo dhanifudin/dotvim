@@ -15,34 +15,14 @@ let g:deoplete#enable_camel_case = 1
 let g:deoplete#omni_patterns = {}
 let g:deoplete#omni_patterns.php = '\h\w*\|[^. \t]->\%(\h\w*\)\?\|\h\w*::\%(\h\w*\)\?'
 
-imap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>is_whitespace() ? "\<TAB>" :
-      \ deoplete#mappings#manual_complete()
+imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+      \ "\<Plug>(neosnippet_expand_or_jump)" : pumvisible() ? "\<C-n>" : "\<TAB>"
 
-function! s:is_whitespace()
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1] =~? '\s'
-endfunction
+smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+      \ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
 
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-
-" inoremap <expr><C-h> deoplete#mappings#smart_close_popup()."\<C-h>"
-" inoremap <expr><BS> deoplete#mappings#smart_close_popup()."\<C-h>"
-
-" inoremap <expr><C-g> deoplete#mappings#undo_completion()
-
-" inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
-" function! s:my_cr_function() abort
-"   return deoplete#mappings#close_popup() . "\<CR>"
-" endfunction
-
-" inoremap <expr> ' pumvisible() ? deoplete#mappings#close_popup() : "'"
-
-" inoremap <silent> <expr><Tab> pumvisible() ? "\<C-n>" : deoplete#mappings#manual_complete()
-" inoremap <silent> <expr><S-Tab> pumvisible() ? "\<C-p>" : "\<C-h>"
 
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 
 " }}} deoplete
-
