@@ -4,7 +4,7 @@ let g:EasyClipUsePasteToggleDefaults = 0
 let g:EasyClipUseSubstituteDefaults = 0
 
 let g:EasyClipAlwaysMoveCursorToEndOfPaste = 1
-let g:EasyClipAutoFormat = 1
+let g:EasyClipAutoFormat = 0
 let g:EasyClipDoSystemSync = 1
 let g:EasyClipUsePasteToggleDefaults = 0
 
