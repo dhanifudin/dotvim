@@ -1,3 +1,8 @@
+if !has('nvim')
+	set encoding=utf-8
+  set nocompatible
+endif
+
 " Misc config
 set history=256
 set clipboard=unnamed
@@ -64,5 +69,5 @@ set background=dark
 try
   colorscheme gruvbox
 catch
-  colorscheme slate
+  colorscheme desert
 endtry

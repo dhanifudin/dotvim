@@ -1,5 +1,3 @@
-let mapleader="\<Space>"
-
 noremap j gj
 noremap k gk
 
@@ -52,16 +50,16 @@ nnoremap U <c-r>
 nnoremap ! <esc>:!
 
 " Fast Switch OmniComplete
-nnoremap coc css setlocal omnifunc=csscomplete#CompleteCSS
-nnoremap coh html setlocal omnifunc=htmlcomplete#CompleteTags
-nnoremap coj javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+" nnoremap coc css setlocal omnifunc=csscomplete#CompleteCSS
+" nnoremap coh html setlocal omnifunc=htmlcomplete#CompleteTags
+" nnoremap coj javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 
-nnoremap tp :setlocal paste!<cr>
-nnoremap th :setlocal nohlsearch!<cr>
+" nnoremap tp :setlocal paste!<cr>
+" nnoremap th :setlocal nohlsearch!<cr>
 
-if executable('fixmyjs')
-  nnoremap fjs <esc>:!fixmyjs %<cr>
-endif
+" if executable('fixmyjs')
+"   nnoremap fjs <esc>:!fixmyjs %<cr>
+" endif
 
 imap <c-o> <c-x><c-o>
 inoremap jj <esc>

@@ -3,7 +3,7 @@ Plug 'tacahiroy/ctrlp-funky'
 Plug 'fisadev/vim-ctrlp-cmdpalette'
 
 " Configurations
-let g:ctrlp_map = '<space>f'
+let g:ctrlp_map = '<leader>f'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_by_filename = 1
 let g:ctrlp_working_path_mode = 'ra'
@@ -24,6 +24,6 @@ if executable('ag')
 endif
 
 " Mapping
-nnoremap <space>b :CtrlPBuffer<cr>
-nnoremap <space>s :CtrlPFunky<cr>
-nnoremap <space>c :CtrlPCmdPalette<cr>
+nnoremap <leader>b :CtrlPBuffer<cr>
+nnoremap <leader>s :CtrlPFunky<cr>
+nnoremap <leader>c :CtrlPCmdPalette<cr>

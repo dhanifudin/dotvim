@@ -1,9 +1,9 @@
 Plug 'mileszs/ack.vim'
 
-if executable('ag')
+if executable('pt')
+  let g:ackprg = 'pt --smart-case'
+elseif executable('ag')
   let g:ackprg = 'ag --vimgrep --smart-case'
-  cnoreabbrev ag Ack
-  cnoreabbrev aG Ack
-  cnoreabbrev Ag Ack
-  cnoreabbrev AG Ack
 endif
+
+nnoremap <leader>g :Ack<space>
