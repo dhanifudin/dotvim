@@ -1,4 +1,4 @@
-Plug 'fatih/vim-go'
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1

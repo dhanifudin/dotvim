@@ -6,28 +6,21 @@ let g:airline_powerline_fonts = 1
 let g:airline_theme = 'gruvbox'
 
 " Airline Extensions
-let g:airline#extensions#disable_rtp_load = 1
 let g:airline#extensions#default#layout = [
   \ [ 'a', 'b', 'c' ],
   \ [ 'x', 'z', 'warning' ]
   \ ]
 
-let g:airline_extensions = [
-  \ 'tabline',
-  \ 'ctrlp',
-  \ 'branch'
-  \ ]
-
 let g:airline_mode_map = {
-    \ '__' : '-',
-    \ 'n'  : 'N',
-    \ 'i'  : 'I',
-    \ 'R'  : 'R',
-    \ 'c'  : 'C',
-    \ 'v'  : 'V',
-    \ 'V'  : 'V-LINE',
-    \ '' : 'V-BLOCK',
-    \ 's'  : 'S',
-    \ 'S'  : 'S',
-    \ '' : 'S',
-    \ }
+  \ '__' : '-',
+  \ 'n'  : 'N',
+  \ 'i'  : 'I',
+  \ 'R'  : 'R',
+  \ 'c'  : 'C',
+  \ 'v'  : 'V',
+  \ 'V'  : 'V-LINE',
+  \ '' : 'V-BLOCK',
+  \ 's'  : 'S',
+  \ 'S'  : 'S',
+  \ '' : 'S',
+  \ }
