@@ -2,6 +2,7 @@ if !has('nvim')
   Plug 'Shougo/neocomplete.vim'
 
   exec "source ~/.vim/plug-available/neosnippet.vim"
+  exec "source ~/.vim/plug-available/tern.vim"
 
   " Disable AutoComplPop.
   let g:acp_enableAtStartup = 0
